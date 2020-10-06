@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="preload" as="font">
     <link rel="stylesheet" href="./dist/css/main.min.css">
+    <script src="./dist/js/script.min.js" defer></script>
     <title>NextMail</title>
 </head>
 <body>
@@ -191,7 +192,7 @@
                         <div class="email">
                             <h2 id="email__subject"></h2>
                             <div class="email_sender">
-                                <img src="./dist/images/person.png" alt="person" width="45" height="45">
+                                <img src="./dist/images/person.png" alt="person" width="45" height="45"  loading="lazy">
                                 <div class="email_sender__info">
                                     <h3 id="email__sender__name"></h3>
                                     <p>From:<span id="email__sender__mailId"></span></p>
@@ -336,6 +337,5 @@
             </section>
         </section>    
     </section>
-    <script src="./dist/js/script.min.js"></script>
 </body>
 </html>
